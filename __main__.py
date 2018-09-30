@@ -14,8 +14,7 @@ print()
 
 
 while True:
-    print('Enter command: ', end='')
-    command = input()
+    command = input('Enter command: ')
     if command.find('play ') == 0:
         filename = command[len('play '):]
         transmitter.transmit(wav.stream(filename=filename))
