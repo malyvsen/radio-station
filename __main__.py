@@ -23,6 +23,6 @@ while True:
     elif command == 'stop':
         transmitter.transmit(silence.stream())
     elif command == 'exit':
-        exit() # transmitter automatically terminates subprocesses at exit
+        exit() # processes are closed at exit
     else:
         print('Command not recognized!')
