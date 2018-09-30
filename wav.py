@@ -1,9 +1,9 @@
 from settings import wav as settings
-import subprocess
+from processes import create
 
 
 command = 'sox ' + settings.audio_directory + 'FILENAME.wav -t wav -'
 
 
 def stream(filename=settings.default_filename):
-    return subprocess.Popen(command.replace('FILENAME', filename).split(), stdout=subprocess.PIPE)
+    return create('wav', command.replace('FILENAME', filename), stdout=subprocess.PIPE)
