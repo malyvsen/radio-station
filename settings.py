@@ -9,7 +9,6 @@ class transmitter:
 
 class wav:
     audio_directory = os.path.join(os.path.dirname(__file__), 'audio/')
-    default_filename = 'default'
 
 
 class mic:
