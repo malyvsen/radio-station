@@ -3,6 +3,8 @@ import mic
 import silence
 import transmitter
 
+import time
+
 
 print('Welcome to radio-station!')
 print('Available commands:')
@@ -14,6 +16,7 @@ print()
 
 
 while True:
+    time.sleep(.5) # give time for subprocesses to set up and display any warnings
     command = input('Enter command: ')
     if command.find('play ') == 0:
         filename = command[len('play '):]
