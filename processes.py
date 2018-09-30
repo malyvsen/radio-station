@@ -19,7 +19,7 @@ def terminate(name):
 
 
 def terminate_all():
-    for name in processes:
+    for name in list(processes):
         terminate(name)
 
 
