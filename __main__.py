@@ -16,11 +16,8 @@ print()
 while True:
     print('Enter command: ', end='')
     command = input()
-    if command.find('play') == 0:
-        if command == 'play':
-            filename = None
-        else:
-            filename = command[len('play '):]
+    if command.find('play ') == 0:
+        filename = command[len('play '):]
         transmitter.transmit(wav.stream(filename=filename))
     elif command == 'mic':
         transmitter.transmit(mic.stream())

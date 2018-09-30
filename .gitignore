@@ -105,5 +105,5 @@ venv.bak/
 
 
 # radio-station project-specific
-audio/
-!audio/default.wav
+audio/*
+!audio/test.wav
