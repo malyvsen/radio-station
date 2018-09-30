@@ -11,10 +11,10 @@ print('exit - quit this program')
 
 
 while True:
-    print('Enter command: ')
+    print('Enter command: ', end='')
     command = input()
     if command == 'play':
-        print('Enter filename (without extension): ')
+        print('Enter filename (without extension): ', end='')
         transmitter.transmit(wav.stream(filename=input()))
     elif command == 'mic':
         transmitter.transmit(mic.stream())
