@@ -7,7 +7,7 @@ processes = {}
 
 def create(name, command, **kwargs):
     '''Create a subprocess, and oversee its predecessor's termination'''
-    terminate(name, kill_target)
+    terminate(name)
     processes[name] = subprocess.Popen(command.split(), **kwargs)
     return processes[name]
 
