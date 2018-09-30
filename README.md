@@ -4,7 +4,8 @@ Minimalistic command-line interface for streaming audio over FM: WAV files or li
 ### Clone into the repository  
 ```sh
 git clone https://github.com/malyvsen/radio-station.git
-cd radio-station```
+cd radio-station
+```
 ### Prepare fm_transmitter
 ```sh
 git submodule update --init --recursive
