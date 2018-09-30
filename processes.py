@@ -1,5 +1,6 @@
 import subprocess
 import atexit
+import os
 
 
 processes = {}
@@ -17,7 +18,7 @@ def terminate(name):
         return
     if processes[name].args[0] == 'sudo':
         # processes launched with sudo need to be terminated with their own name
-        subprocess.call(('sudo', 'pkill', processes[name].args[1]))
+        subprocess.call(('sudo', 'pkill', os.path.basename(processes[name].args[1])))
     else:
         subprocess.call(('sudo', 'kill', str(processes[name].pid)))
     del processes[name]
