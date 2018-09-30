@@ -1,7 +1,7 @@
 import wav
 import mic
+import silence
 import transmitter
-import processes
 
 
 print('Welcome to radio-station!')
@@ -21,7 +21,7 @@ while True:
     elif command == 'mic':
         transmitter.transmit(mic.stream())
     elif command == 'stop':
-        processes.terminate_all()
+        transmitter.transmit(silence.stream())
     elif command == 'exit':
         exit() # transmitter automatically terminates subprocesses at exit
     else:
