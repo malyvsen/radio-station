@@ -13,8 +13,8 @@ class wav:
 
 
 class mic:
-    sample_rate = 44000
+    sample_rate = 48000 # in Hz
 
 
 class silence:
-    sample_rate = 44100
+    sample_rate = 44100 # in Hz
