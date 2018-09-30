@@ -11,4 +11,4 @@ def transmit(stream):
     Can be called multiple times
     Automatically terminates unnecessary subprocesses
     '''
-    return create('transmitter', command, stdin=stream.stdout, stdout=open(os.devnull, 'w'))
+    return create('transmitter', command, kill_target=settings.program_name, stdin=stream.stdout, stdout=open(os.devnull, 'w'))

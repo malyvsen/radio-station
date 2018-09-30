@@ -3,7 +3,8 @@ import os
 
 class transmitter:
     frequency = 100 # in MHz
-    program_path = os.path.join(os.path.dirname(__file__), 'fm_transmitter/fm_transmitter')
+    program_name = 'fm_transmitter'
+    program_path = os.path.join(os.path.dirname(__file__), 'fm_transmitter/' + program_name)
 
 
 class wav:
