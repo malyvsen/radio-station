@@ -24,7 +24,7 @@ The broadcaster works without an antenna, but adding one significantly improves 
 cd .. # you need to be one directory above this repo
 sudo python3 radio-station/ # the sudo is necessary to run fm_transmitter
 ```
-The program will display usage instructions.
+The program will display usage instructions. Use `play test` to test your radio with the included test file.
 ### Configure
 The broadcasting frequency and other settings are stored in `settings.py`. You will need to restart your station for settings to be applied.
 ### Legal
