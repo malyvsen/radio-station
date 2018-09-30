@@ -102,3 +102,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# radio-station project-specific
+audio/
+!audio/default.wav
