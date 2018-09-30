@@ -1,5 +1,6 @@
 from settings import wav as settings
 from processes import create
+import subprocess
 
 
 command = 'sox ' + settings.audio_directory + 'FILENAME.wav -t wav -'
