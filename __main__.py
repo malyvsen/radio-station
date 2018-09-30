@@ -10,7 +10,7 @@ print('mic - stream real-time audio from the microphone')
 print('exit - quit this program')
 
 
-while True():
+while True:
     print('Enter command: ')
     command = input()
     if command == 'play':
